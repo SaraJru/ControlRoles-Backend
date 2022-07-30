@@ -13,7 +13,7 @@ public class Roles implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name="rol_Name")
+    @Column(name="rol_Name", nullable=false, unique=true)
     private String rolName;
     
 }
